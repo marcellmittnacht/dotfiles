@@ -1,0 +1,6 @@
+require("plugins")
+require("settings")
+require("lsp_conf")
+require("treesitter_conf")
+require("lualine_conf")
+require("nvimtree_conf")
