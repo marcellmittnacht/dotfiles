@@ -4,6 +4,7 @@ local map = vim.api.nvim_set_keymap
 vim.api.nvim_command("let g:loaded_python_provider = 0")
 vim.api.nvim_command("let g:loaded_ruby_provider = 0")
 vim.api.nvim_command("let g:loaded_perl_provider = 0")
+
 opt.syntax = "on"
 opt.encoding = "utf-8"
 opt.backup = false
@@ -35,11 +36,13 @@ opt.updatetime = 500
 opt.guicursor = "" 
 opt.autoindent = true
 opt.termguicolors = true
-opt.splitright = true 
+opt.splitright = true
 vim.api.nvim_command("set clipboard+=unnamedplus")
-vim.api.nvim_command("colorscheme onedark")
+vim.api.nvim_command("colorscheme nord")
 vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
 vim.api.nvim_command("nnoremap <C-f> <cmd>Telescope find_files<cr>")
+vim.api.nvim_command("nnoremap <silent><C-]> :BufferLineCycleNext<CR>")
+vim.api.nvim_command("nnoremap <silent><C-[> :BufferLineCyclePrev<CR>")
 
 map("n", "<up>", "<nop>", {noremap = true})
 map("n", "<down>", "<nop>", {noremap = true})

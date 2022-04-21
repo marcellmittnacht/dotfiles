@@ -9,10 +9,11 @@ return require("packer").startup(function()
         run = ':TSUpdate'
     }
     use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
+    use 'williamboman/nvim-lsp-installer'
     use { 'ms-jpq/coq_nvim', run = 'python3 -m coq deps' }
     use 'ms-jpq/coq.artifacts'
     use 'ms-jpq/coq.thirdparty'
-    use 'joshdick/onedark.vim'
+    use 'arcticicestudio/nord-vim'
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {
@@ -24,5 +25,6 @@ return require("packer").startup(function()
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use 'mhinz/vim-startify'
+    use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
 
 end)
