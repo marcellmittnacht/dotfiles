@@ -40,7 +40,7 @@ opt.splitright = true
 vim.api.nvim_command("set clipboard+=unnamedplus")
 vim.api.nvim_command("colorscheme nord")
 vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
-vim.api.nvim_command("nnoremap <C-f> <cmd>Telescope find_files<cr>")
+vim.api.nvim_command("nnoremap <C-p> <cmd>Telescope find_files<cr>")
 vim.api.nvim_command("nnoremap <silent><C-]> :BufferLineCycleNext<CR>")
 vim.api.nvim_command("nnoremap <silent><C-[> :BufferLineCyclePrev<CR>")
 
