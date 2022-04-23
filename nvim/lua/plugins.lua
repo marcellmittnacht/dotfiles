@@ -22,6 +22,7 @@ return require("packer").startup(function()
     }
     use {
         'nvim-telescope/telescope.nvim',
+        branch = 'nvim-0.6',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use 'mhinz/vim-startify'
