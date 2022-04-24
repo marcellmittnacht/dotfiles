@@ -89,15 +89,15 @@ _G.packer_plugins = {
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["nord-vim"] = {
-    loaded = true,
-    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/nord-vim",
-    url = "https://github.com/arcticicestudio/nord-vim"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,

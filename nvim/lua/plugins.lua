@@ -13,7 +13,7 @@ return require("packer").startup(function()
     use { 'ms-jpq/coq_nvim', run = 'python3 -m coq deps' }
     use 'ms-jpq/coq.artifacts'
     use 'ms-jpq/coq.thirdparty'
-    use 'arcticicestudio/nord-vim'
+    use "projekt0n/github-nvim-theme"
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {

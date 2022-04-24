@@ -38,7 +38,6 @@ opt.autoindent = true
 opt.termguicolors = true
 opt.splitright = true
 vim.api.nvim_command("set clipboard+=unnamedplus")
-vim.api.nvim_command("colorscheme nord")
 vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
 vim.api.nvim_command("nnoremap <C-p> <cmd>Telescope find_files<cr>")
 vim.api.nvim_command("nnoremap <silent><C-]> :BufferLineCycleNext<CR>")
@@ -53,3 +52,5 @@ map("i", "<right>", "<nop>", {noremap = true})
 map("n", "<left>", ":bp<CR>", {noremap = true})
 map("n", "<right>", ":bn<CR>", {noremap = true})
 map("n", "<C-n>", ":NvimTreeToggle<CR>", {noremap = true})
+
+require('github-theme').setup()
