@@ -74,30 +74,15 @@ _G.packer_plugins = {
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  ["coq.artifacts"] = {
-    loaded = true,
-    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/coq.artifacts",
-    url = "https://github.com/ms-jpq/coq.artifacts"
-  },
-  ["coq.thirdparty"] = {
-    loaded = true,
-    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
-    url = "https://github.com/ms-jpq/coq.thirdparty"
-  },
-  coq_nvim = {
-    loaded = true,
-    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/coq_nvim",
-    url = "https://github.com/ms-jpq/coq_nvim"
-  },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,

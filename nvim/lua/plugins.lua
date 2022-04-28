@@ -10,10 +10,7 @@ return require("packer").startup(function()
     }
     use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
     use 'williamboman/nvim-lsp-installer'
-    use { 'ms-jpq/coq_nvim', run = 'python3 -m coq deps' }
-    use 'ms-jpq/coq.artifacts'
-    use 'ms-jpq/coq.thirdparty'
-    use "projekt0n/github-nvim-theme"
+    use 'shaunsingh/nord.nvim'
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {
