@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cp -r ~/.config/nvim .
-cp -r ~/.config/kitty .
+cp -r ~/.config/alacritty .
 
 git add .
 git commit -m "dotfiles update"
