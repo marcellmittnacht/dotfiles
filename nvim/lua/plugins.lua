@@ -10,7 +10,7 @@ return require("packer").startup(function()
     }
     use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
     use 'williamboman/nvim-lsp-installer'
-    use 'shaunsingh/nord.nvim'
+    use 'marko-cerovac/material.nvim'
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {
@@ -19,7 +19,6 @@ return require("packer").startup(function()
     }
     use {
         'nvim-telescope/telescope.nvim',
-        branch = 'nvim-0.6',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use 'mhinz/vim-startify'

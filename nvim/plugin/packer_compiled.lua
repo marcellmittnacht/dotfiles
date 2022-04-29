@@ -79,10 +79,10 @@ _G.packer_plugins = {
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["nord.nvim"] = {
+  ["material.nvim"] = {
     loaded = true,
-    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
+    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
