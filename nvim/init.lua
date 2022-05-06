@@ -7,4 +7,5 @@ then
 	require("lualine_conf")
 	require("nvimtree_conf")
     require("bufferline_conf")
+    require("comment_conf")
 end

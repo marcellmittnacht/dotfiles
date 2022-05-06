@@ -23,5 +23,6 @@ return require("packer").startup(function()
     }
     use 'mhinz/vim-startify'
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
+    use 'numToStr/Comment.nvim'
 
 end)

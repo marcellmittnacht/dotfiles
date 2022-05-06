@@ -181,8 +181,13 @@ bar {
         status_command i3status
 }
 
+assign [class="Steam"] 7
+assign [class="discord"] 8
+for_window [class="Spotify"] move to workspace $ws9
+
 gaps inner 15
 exec_always --no-startup-id picom --experimental-backends
 default_border pixel
 focus_follows_mouse no
 exec --no-startup-id feh --bg-fill /usr/share/backgrounds/default.png
+exec --no-startup-id python ~/.local/share/script/i3unityfix.py &
