@@ -8,8 +8,20 @@ return require("packer").startup(function()
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-    use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
-    use 'williamboman/nvim-lsp-installer'
+    use {
+        'ms-jpq/coq-nvim',
+        branch = 'coq'
+    }
+    use {
+        'ms-jpq/coq.artifacts',
+        branch = 'artifacts'
+    }
+    use {
+        'williamboman/nvim-lsp-installer',
+        {
+            use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
+        }
+    }
     use 'marko-cerovac/material.nvim'
     use {
         'kyazdani42/nvim-tree.lua',

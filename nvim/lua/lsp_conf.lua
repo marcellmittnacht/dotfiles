@@ -23,26 +23,11 @@ function common_on_attach(client, bufnr)
   -- add your code here
 end
 
-lsp_installer.on_server_ready(function(server)
-  -- Specify the default options which we'll use to setup all servers
-  local opts = {
+lsp_installer.setup({
     on_attach = on_attach,
     flags = {
-        debounce_text_changes = 150,
-    },
-  }
-  if server.name == "eslint" then
-    opts.on_attach = function (client, bufnr)
-        -- neovim's LSP client does not currently support dynamic capabilities registration, so we need to set
-        -- the resolved capabilities of the eslint server ourselves!
-        client.resolved_capabilities.document_formatting = true
-        common_on_attach(client, bufnr)
-    end
-    opts.settings = {
-        format = { enable = true }, -- this will enable formatting
+      -- This will be the default in neovim 0.7+
+      debounce_text_changes = 150,
     }
-end
-
-  server:setup(opts)
-end)
-
+  }
+)

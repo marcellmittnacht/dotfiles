@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["coq-nvim"] = {
+    loaded = true,
+    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/coq-nvim",
+    url = "https://github.com/ms-jpq/coq-nvim"
+  },
+  ["coq.artifacts"] = {
+    loaded = true,
+    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    url = "https://github.com/ms-jpq/coq.artifacts"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/lualine.nvim",
