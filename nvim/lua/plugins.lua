@@ -9,18 +9,16 @@ return require("packer").startup(function()
         run = ':TSUpdate'
     }
     use {
+        "williamboman/nvim-lsp-installer",
+        "neovim/nvim-lspconfig",
+    }
+    use {
         'ms-jpq/coq-nvim',
         branch = 'coq'
     }
     use {
-        'ms-jpq/coq.artifacts',
-        branch = 'artifacts'
-    }
-    use {
-        'williamboman/nvim-lsp-installer',
-        {
-            use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
-        }
+       'ms-jpq/coq.artifacts',
+       branch = 'artifacts'
     }
     use 'marko-cerovac/material.nvim'
     use {

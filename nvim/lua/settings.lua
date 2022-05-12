@@ -20,7 +20,7 @@ opt.relativenumber = true
 opt.filetype = "on"
 opt.modelines = 0
 opt.belloff = "all"
-opt.wrap = false 
+opt.wrap = false
 opt.ruler = true
 opt.scrolloff = 10
 opt.tabstop = 4
@@ -30,14 +30,14 @@ opt.expandtab = true
 opt.smartindent = true
 opt.shiftround = false
 opt.hidden = true
-opt.hlsearch = false 
+opt.hlsearch = false
 opt.ignorecase = true
 opt.smartcase = true
 opt.showmatch = true
 vim.api.nvim_command("set t_Co=256")
 opt.cmdheight = 1
 opt.updatetime = 500
-opt.guicursor = "" 
+opt.guicursor = ""
 opt.autoindent = true
 opt.termguicolors = true
 opt.splitright = true
@@ -48,6 +48,7 @@ vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname(
 vim.api.nvim_command("nnoremap <C-p> <cmd>Telescope find_files<cr>")
 vim.api.nvim_command("nnoremap <silent><C-]> :BufferLineCycleNext<CR>")
 vim.api.nvim_command("nnoremap <silent><A-]> :BufferLineCyclePrev<CR>")
+vim.api.nvim_command("autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })")
 
 map("n", "<up>", "<nop>", {noremap = true})
 map("n", "<down>", "<nop>", {noremap = true})
@@ -55,7 +56,5 @@ map("i", "<up>", "<nop>", {noremap = true})
 map("i", "<down>", "<nop>", {noremap = true})
 map("i", "<left>", "<nop>", {noremap = true})
 map("i", "<right>", "<nop>", {noremap = true})
-map("n", "<left>", ":bp<CR>", {noremap = true})
-map("n", "<right>", ":bn<CR>", {noremap = true})
-map("n", "<C-n>", ":NvimTreeToggle<CR>", {noremap = true})
-
+map("n", "<left>", "<nop>", {noremap = true})
+map("n", "<right>", "<nop>", {noremap = true})
