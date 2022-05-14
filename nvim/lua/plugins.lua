@@ -11,14 +11,14 @@ return require("packer").startup(function()
     use {
         "williamboman/nvim-lsp-installer",
         "neovim/nvim-lspconfig",
-    }
-    use {
-        'ms-jpq/coq-nvim',
-        branch = 'coq'
-    }
-    use {
-       'ms-jpq/coq.artifacts',
-       branch = 'artifacts'
+        {
+            'ms-jpq/coq-nvim',
+            branch = 'coq'
+        },
+        {
+           'ms-jpq/coq.artifacts',
+           branch = 'artifacts'
+        }
     }
     use 'marko-cerovac/material.nvim'
     use {

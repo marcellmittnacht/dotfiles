@@ -22,7 +22,7 @@ opt.modelines = 0
 opt.belloff = "all"
 opt.wrap = false
 opt.ruler = true
-opt.scrolloff = 10
+opt.scrolloff = 20
 opt.tabstop = 4
 opt.shiftwidth = 4
 opt.softtabstop = 4
@@ -48,7 +48,7 @@ vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname(
 vim.api.nvim_command("nnoremap <C-p> <cmd>Telescope find_files<cr>")
 vim.api.nvim_command("nnoremap <silent><C-]> :BufferLineCycleNext<CR>")
 vim.api.nvim_command("nnoremap <silent><A-]> :BufferLineCyclePrev<CR>")
-vim.api.nvim_command("autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })")
+vim.api.nvim_command("nnoremap q: <nop>")
 
 map("n", "<up>", "<nop>", {noremap = true})
 map("n", "<down>", "<nop>", {noremap = true})
@@ -58,3 +58,4 @@ map("i", "<left>", "<nop>", {noremap = true})
 map("i", "<right>", "<nop>", {noremap = true})
 map("n", "<left>", "<nop>", {noremap = true})
 map("n", "<right>", "<nop>", {noremap = true})
+vim.api.nvim_command("nnoremap <C-n> :NvimTreeToggle<CR>")
