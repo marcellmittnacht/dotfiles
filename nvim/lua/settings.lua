@@ -1,7 +1,3 @@
-require('material').setup({
-    lualine_style = 'default'
-})
-
 local opt = vim.opt
 local map = vim.api.nvim_set_keymap
 
@@ -41,8 +37,8 @@ opt.guicursor = ""
 opt.autoindent = true
 opt.termguicolors = true
 opt.splitright = true
-vim.g.material_style = "palenight"
-vim.api.nvim_command("colorscheme material")
+vim.g.tokyonight_style = "storm"
+vim.api.nvim_command("colorscheme tokyonight")
 vim.api.nvim_command("set clipboard+=unnamedplus")
 vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
 vim.api.nvim_command("nnoremap <C-p> <cmd>Telescope find_files<cr>")

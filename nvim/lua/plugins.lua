@@ -20,7 +20,7 @@ return require("packer").startup(function()
            branch = 'artifacts'
         }
     }
-    use 'marko-cerovac/material.nvim'
+    use 'folke/tokyonight.nvim'
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {
