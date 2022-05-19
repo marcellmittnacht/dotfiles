@@ -31,14 +31,14 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.showmatch = true
 vim.api.nvim_command("set t_Co=256")
+opt.background = "dark"
 opt.cmdheight = 1
 opt.updatetime = 500
 opt.guicursor = ""
 opt.autoindent = true
 opt.termguicolors = true
 opt.splitright = true
-vim.g.tokyonight_style = "storm"
-vim.api.nvim_command("colorscheme tokyonight")
+vim.api.nvim_command("colorscheme dracula")
 vim.api.nvim_command("set clipboard+=unnamedplus")
 vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
 vim.api.nvim_command("nnoremap <C-p> <cmd>Telescope find_files<cr>")
