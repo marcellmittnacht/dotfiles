@@ -38,7 +38,8 @@ opt.guicursor = ""
 opt.autoindent = true
 opt.termguicolors = true
 opt.splitright = true
-vim.api.nvim_command("colorscheme dracula")
+opt.mouse = 'a'
+vim.api.nvim_command("colorscheme gruvbox-material")
 vim.api.nvim_command("set clipboard+=unnamedplus")
 vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
 vim.api.nvim_command("nnoremap <C-p> <cmd>Telescope find_files<cr>")

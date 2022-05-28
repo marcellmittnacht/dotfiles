@@ -89,10 +89,10 @@ _G.packer_plugins = {
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/coq.artifacts",
     url = "https://github.com/ms-jpq/coq.artifacts"
   },
-  ["dracula.nvim"] = {
+  ["gruvbox-material.nvim"] = {
     loaded = true,
-    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
+    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/gruvbox-material.nvim",
+    url = "https://github.com/wittyjudge/gruvbox-material.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,

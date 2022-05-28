@@ -20,7 +20,7 @@ return require("packer").startup(function()
            branch = 'artifacts'
         }
     }
-    use 'Mofiqul/dracula.nvim'
+    use 'wittyjudge/gruvbox-material.nvim'
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {
