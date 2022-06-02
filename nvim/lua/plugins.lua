@@ -31,7 +31,7 @@ return require("packer").startup(function()
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use 'mhinz/vim-startify'
+    use 'glepnir/dashboard-nvim'
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
     use 'numToStr/Comment.nvim'
 

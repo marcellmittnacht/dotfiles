@@ -137,6 +137,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 assign [class="discord"] $ws8
 for_window [class="Spotify"] move to workspace $ws9
+assign [class="Lutris"] $ws7
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

@@ -4,6 +4,7 @@ local map = vim.api.nvim_set_keymap
 vim.api.nvim_command("let g:loaded_python_provider = 0")
 vim.api.nvim_command("let g:loaded_ruby_provider = 0")
 vim.api.nvim_command("let g:loaded_perl_provider = 0")
+vim.api.nvim_command("let g:dashboard_default_executive = 'telescope'")
 
 opt.syntax = "on"
 opt.encoding = "utf-8"
@@ -38,7 +39,6 @@ opt.guicursor = ""
 opt.autoindent = true
 opt.termguicolors = true
 opt.splitright = true
-opt.mouse = 'a'
 vim.api.nvim_command("colorscheme gruvbox-material")
 vim.api.nvim_command("set clipboard+=unnamedplus")
 vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")

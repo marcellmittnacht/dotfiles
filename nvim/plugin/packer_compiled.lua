@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/coq.artifacts",
     url = "https://github.com/ms-jpq/coq.artifacts"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["gruvbox-material.nvim"] = {
     loaded = true,
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/gruvbox-material.nvim",
@@ -138,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/home/marcellm/.local/share/nvim/site/pack/packer/start/vim-startify",
-    url = "https://github.com/mhinz/vim-startify"
   }
 }
 
