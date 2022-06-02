@@ -1,5 +1,9 @@
 general {
-        interval = 1
+        colors = true
+        color_good = "#98971a"
+        color_bad = "#cc241d"
+        color_degraded = "#fabd2f"
+        interval = 2
 }
 
 order += "volume master"
@@ -36,5 +40,5 @@ disk "/mnt/data" {
 }
 
 volume master {
-        format = "♪: %volume"
+        format = "🔊 %volume"
 }
