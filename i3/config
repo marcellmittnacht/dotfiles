@@ -192,6 +192,7 @@ bar {
         }
         status_command i3status
         strip_workspace_numbers yes
+        font pango: Font Awesome 11
 }
 
 gaps inner 10

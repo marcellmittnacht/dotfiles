@@ -15,16 +15,16 @@ order += "memory"
 order += "tztime local"
 
 tztime local {
-        format = "%Y-%m-%d %H:%M"
+        format = " %Y-%m-%d %H:%M"
 }
 
 cpu_temperature 0 {
-        format = "CPU: %degrees °C"
+        format = " : %degrees °C"
         path = "/sys/class/hwmon/hwmon0/temp1_input"
 }
 
 cpu_usage {
-        format = "CPU: %usage"
+        format = " : %usage"
 }
 
 memory {
@@ -32,13 +32,13 @@ memory {
 }
 
 disk "/" {
-        format = "SSD: %free"
+        format = " : %free"
 }
 
 disk "/mnt/data" {
-        format = "HDD: %free"
+        format = " : %free"
 }
 
 volume master {
-        format = "🔊 %volume"
+        format = "  %volume"
 }
