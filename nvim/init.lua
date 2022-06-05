@@ -3,6 +3,6 @@ then
 	require('plugins')
 	require('settings')
 	require('keybinds')
-  require('basic_plugins')
+  require('plugins_settings')
   require('lsp')
 end
