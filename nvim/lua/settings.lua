@@ -35,4 +35,6 @@ opt.guicursor = ""
 opt.autoindent = true
 opt.termguicolors = true
 opt.splitright = true
-vim.api.nvim_command("colorscheme gruvbox-material")
+vim.g.tokyonight_style = "storm"
+vim.api.nvim_command("colorscheme tokyonight")
+vim.api.nvim_command("set clipboard+=unnamedplus")

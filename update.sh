@@ -6,6 +6,7 @@ cp -r ~/.config/i3 .
 cp -r ~/.config/i3status .
 cp -r ~/.config/picom .
 cp ~/.tmux.conf .
+cp -r ~/.config/rofi .
 
 git add .
 git commit -m "dotfiles update"

@@ -6,7 +6,7 @@ require('bufferline').setup{
 }
 require'lualine'.setup {
 	options = {
-		theme = 'gruvbox-material'
+		theme = 'tokyonight'
     	}
 }
 require'nvim-tree'.setup {
