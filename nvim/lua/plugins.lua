@@ -1,6 +1,6 @@
 return require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
-	use 'folke/tokyonight.nvim' 
+	use 'folke/tokyonight.nvim'
 	use {
 	  'nvim-lualine/lualine.nvim',
 	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -16,20 +16,11 @@ return require('packer').startup(function()
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'numToStr/Comment.nvim'
-	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+	use {'akinsho/bufferline.nvim', tag = 'v2.*', requires = 'kyazdani42/nvim-web-devicons'}
   use 'nvim-treesitter/nvim-treesitter'
-  use {
-    "williamboman/nvim-lsp-installer",
-    {
-      "neovim/nvim-lspconfig",
-      {
-        'ms-jpq/coq-nvim',
-        branch = 'coq'
-      },
-      {
-        'ms-jpq/coq.artifacts',
-        branch = 'artifacts'
-      },
-    }
-  }
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/nvim-cmp' 
+  use 'hrsh7th/cmp-nvim-lsp' 
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'L3MON4D3/LuaSnip'
 end)
