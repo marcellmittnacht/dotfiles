@@ -9,8 +9,8 @@ general {
 order += "volume master"
 order += "disk /"
 order += "disk /mnt/data"
-order += "cpu_temperature 0"
 order += "cpu_usage"
+order += "cpu_temperature 0"
 order += "memory"
 order += "tztime local"
 
@@ -19,7 +19,7 @@ tztime local {
 }
 
 cpu_temperature 0 {
-        format = " : %degrees °C"
+        format = " : %degrees °C"
         path = "/sys/class/hwmon/hwmon0/temp1_input"
 }
 
