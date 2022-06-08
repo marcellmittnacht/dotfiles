@@ -18,9 +18,10 @@ opt.belloff = "all"
 opt.wrap = false
 opt.ruler = true
 opt.scrolloff = 20
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.softtabstop = 2
+opt.updatetime = 300
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.softtabstop = 4
 opt.expandtab = true
 opt.smartindent = true
 opt.shiftround = false
@@ -39,3 +40,4 @@ vim.g.tokyonight_style = "storm"
 vim.api.nvim_command("colorscheme tokyonight")
 vim.api.nvim_command("set clipboard+=unnamedplus")
 vim.api.nvim_command("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
+
