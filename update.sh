@@ -5,7 +5,6 @@ cp -r ~/.config/kitty .
 cp -r ~/.config/i3 .
 cp -r ~/.config/i3status .
 cp -r ~/.config/picom .
-cp ~/.tmux.conf .
 cp -r ~/.config/rofi .
 
 git add .
