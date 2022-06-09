@@ -2,7 +2,7 @@ require('Comment').setup{}
 require('bufferline').setup{}
 require'lualine'.setup {
 	options = {
-		theme = 'tokyonight'
+		theme = 'nord'
     	}
 }
 require'nvim-tree'.setup {
