@@ -26,6 +26,8 @@ set clipboard=unnamedplus
 set updatetime=300
 set shortmess+=c
 set signcolumn=number
+set laststatus=2
+set noshowmode
 
 call plug#begin()
 	Plug 'ghifarit53/tokyonight-vim'
@@ -35,7 +37,9 @@ call plug#begin()
 	Plug 'ryanoasis/vim-devicons'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-
+    Plug 'itchyny/lightline.vim'
+    Plug 'tpope/vim-commentary'
+    Plug 'ap/vim-buftabline'
 call plug#end()
 
 let g:tokyonight_style = 'night' 
@@ -55,8 +59,8 @@ inoremap <Left> <nop>
 inoremap <Right> <nop>
 
 " fzf 
-
 nnoremap <silent> sf :Files<CR>
+command! -nargs=* W w
 
 " Nerdtree
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
@@ -90,5 +94,11 @@ function! ShowDocumentation()
 endfunction
 
 " Formatting selected code.
-xmap <silent>ff  <Plug>(coc-format-selected)
-nmap <silent>ff  <Plug>(coc-format-selected)
+nmap <silent>ff :CocCommand editor.action.formatDocument<CR> 
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprev<CR>
